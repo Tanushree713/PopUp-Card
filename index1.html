@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUP&DOWN</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box ;
+            font-family: 'Poppins' ,sans-serif;
+          
+      }
+      body{
+        background-color: rgb(4, 4, 77);
+       
+        color: #3b3939;
+
+      }
+        #btn{
+            font-size: 23px ;
+            font-weight: 600 ;
+            border: 2px solid grey;
+            border-radius: 20px;
+            color: rgb(3, 3, 106);
+            background-color: #ffffff;
+            padding: 8px 20px ;
+            margin: 17% 44%;   
+            cursor: pointer;    
+        
+        }
+        .container{
+         
+            border: 2px solid grey ;
+            border-radius: 20px;
+            height: 38vh ;
+            width: 35vw;
+            background-color: #ffffff ;
+            font-size: 23px ;
+            font-weight: 600 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute ;
+            top: 26%;
+            left: 33%;
+            
+            
+        }
+       #main{
+
+        display: none;
+        transition: transform 4s ;
+       }
+        
+        img[alt="img"]{
+            height: 14vh;
+            width: 10vw;
+            position:absolute;
+            top: -20%;
+        }
+        h3{
+          position: relative; 
+          top: -10%;
+          font-size: 30px;
+          
+
+        }
+        p{
+          position: absolute;
+          bottom: 37%;
+          padding-left: 30px;
+          font-size: 18px;
+          padding-right: 40px;
+          line-height: 20px;
+        }
+        #btn1{
+            position: absolute;
+            bottom: 10%;
+            background-color: rgb(35, 141, 35);
+            width: 90%;
+            border: none;
+            font-size: 22px;
+            padding: 10px 20px ;
+            color: #ffffff;
+            box-shadow: 0px 0px 5px 5px solid grey;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <button  onclick="popUp()" id="btn">Submit</button>
+       <section id="main">
+        <div class="container">
+        <img src="./tick.png" alt="img">
+        <h3>Thank You!</h3>
+        <p>You have Successfully Login in this Page. Thanks!</p>
+        <button  onclick="popDown()" id="btn1">OK</button>
+    </div>
+</section>
+
+<script src="./server1.js"></script>
+  
+</body>
+</html>
